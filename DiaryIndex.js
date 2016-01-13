@@ -26,7 +26,7 @@ const images = StyleSheet.create({
 });
 module.exports =  class DiaryIndex extends Component {
     getBack() {
-        this.props.navigator.push({name: 'ToTravel'});
+        this.props.navigator.pop();
     }
     render() {
         return (
