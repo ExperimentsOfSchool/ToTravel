@@ -25,7 +25,6 @@ const {
     ScrollView,
     Dimensions,
     Component,
-    Navigator,
     } = React;
 const windowWidth = Dimensions.get('window').width;
 module.exports = class ToTravel extends Component {
@@ -55,7 +54,7 @@ module.exports = class ToTravel extends Component {
                 onChange={(isOpen) => this.updateMenuState(isOpen)}
                 navigator={null}
             >
-            <ScrollView style={styles.container} scrollsToTop={false}>
+            <ScrollView style={styles.container}>
                 <Swiper
                     style={styles.headerImg}
                     showsButtons={false}
